@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Deliveryli</title>
+<style>
+:root{--bg:#0d1f16;--card:#123224;--text:#f7f7f2;--muted:#d6e1da;--green:#1f6b3d;--green2:#2f8a52;--orange:#f59e0b;--border:rgba(255,255,255,.12);}
+*{box-sizing:border-box}html,body{margin:0;padding:0}
+body{
+  font-family:Arial,sans-serif;
+  background:radial-gradient(circle at top, rgba(47,138,82,.25), transparent 28%),var(--bg);
+  color:var(--text);
+  min-height:100vh
+}
+a{text-decoration:none}
+.container{width:min(1120px,92%);margin:0 auto;padding:22px 0 40px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding:6px 0 18px}
+.logo-wrap{display:flex;align-items:center;gap:14px}
+.logo{
+  width:70px;height:70px;border-radius:18px;background:#fff;display:grid;place-items:center;
+  overflow:hidden;box-shadow:0 16px 40px rgba(0,0,0,.25)
+}
+.logo img{width:100%;height:100%;object-fit:cover}
+.brand h1{margin:0;font-size:1.7rem}
+.brand p{margin:5px 0 0;color:var(--muted)}
+
+.hero{
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:20px;
+  align-items:stretch
+}
+.panel{
+  background:rgba(18,50,36,.9);
+  border:1px solid var(--border);
+  border-radius:24px;
+  padding:26px;
+  backdrop-filter:blur(10px);
+  box-shadow:0 24px 60px rgba(0,0,0,.3)
+}
+.hero h2{
+  font-size:clamp(2rem,4vw,3.8rem);
+  line-height:1.05;
+  margin:0 0 14px
+}
+.lead{
+  color:var(--muted);
+  line-height:1.7;
+  font-size:1.05rem;
+  max-width:58ch
+}
+.buttons{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  gap:10px;
+  padding:14px 18px;
+  border-radius:14px;
+  color:#fff;
+  font-weight:700;
+  border:1px solid transparent;
+  transition:.2s
+}
+.btn:hover{transform:translateY(-2px)}
+.primary{background:linear-gradient(135deg,var(--green2),var(--green))}
+.secondary{background:linear-gradient(135deg,#0ea5e9,#2563eb)}
+.ghost{background:transparent;border-color:var(--border)}
+
+.socials{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:14px;
+  margin-top:18px
+}
+.social-card{
+  padding:14px;
+  border-radius:18px;
+  background:rgba(255,255,255,.05);
+  border:1px solid var(--border);
+  color:var(--text);
+  display:flex;
+  align-items:center;
+  gap:12px;
+  min-height:74px
+}
+.social-card img{
+  width:34px;height:34px;object-fit:contain;border-radius:8px;background:#fff;padding:4px
+}
+.social-card strong{display:block;font-size:1rem}
+.social-card small{display:block;color:var(--muted);margin-top:3px}
+
+.wa{
+  margin-top:18px;
+  padding:18px;
+  border-radius:18px;
+  background:linear-gradient(135deg, rgba(245,158,11,.16), rgba(47,138,82,.12));
+  border:1px solid var(--border);
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  align-items:center;
+  flex-wrap:wrap
+}
+
+.apps{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:14px;
+  margin-top:18px
+}
+.appcard{
+  padding:16px;
+  border-radius:18px;
+  background:rgba(255,255,255,.05);
+  border:1px solid var(--border);
+  color:var(--text)
+}
+.appcard strong{display:block}
+.appcard span{display:block;color:var(--muted);margin-top:4px}
+
+.footer{
+  text-align:center;
+  color:var(--muted);
+  margin-top:18px;
+  font-size:.92rem
+}
+
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  .socials,.apps{grid-template-columns:1fr}
+  .btn{width:100%}
+  .panel{padding:20px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="top">
+    <div class="logo-wrap">
+      <div class="logo">
+        <img src="IMG_3786.jpeg" alt="Deliveryli logo">
+      </div>
+      <div class="brand">
+        <h1>Deliveryli</h1>
+        <p>Livraison rapide sur mobile et ordinateur</p>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="panel">
+      <h2>Votre plateforme de livraison, simple et élégante.</h2>
+      <p class="lead">
+        Téléchargez l’app Deliveryli et accédez rapidement à vos commandes, au suivi en temps réel et à nos réseaux sociaux officiels.
+      </p>
+
+      <div class="buttons">
+        <a class="btn primary" href="https://apps.apple.com/app/id6759626936" target="_blank" rel="noopener noreferrer">Télécharger sur iOS</a>
+        <a class="btn secondary" href="https://play.google.com/store/apps/details?id=com.deliveryli.marketplace&hl=fr" target="_blank" rel="noopener noreferrer">Télécharger sur Android</a>
+        <a class="btn ghost" href="https://wa.me/33223382" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      </div>
+
+      <div class="apps">
+        <div class="appcard">
+          <strong>App iOS</strong>
+          <span>App Store</span>
+        </div>
+        <div class="appcard">
+          <strong>App Android</strong>
+          <span>Google Play</span>
+        </div>
+      </div>
+
+      <div class="wa">
+        <div>
+          <strong>Contact direct</strong>
+          <div style="color:var(--muted);margin-top:4px;">33223382</div>
+        </div>
+        <a class="btn primary" href="https://wa.me/33223382" target="_blank" rel="noopener noreferrer">Ouvrir WhatsApp</a>
+      </div>
+    </div>
+
+    <aside class="panel">
+      <h3 style="margin-top:0">Réseaux sociaux</h3>
+      <div class="socials">
+        <a class="social-card" href="https://www.instagram.com/deliverylii?igsh=MWN2dnB6cHh5ZDQ4OQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+          <div>
+            <strong>Instagram</strong>
+            <small>@deliverylii</small>
+          </div>
+        </a>
+
+        <a class="social-card" href="https://snapchat.com/t/J5GKkNUW" target="_blank" rel="noopener noreferrer">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Snapchat_logo.svg/512px-Snapchat_logo.svg.png" alt="Snapchat">
+          <div>
+            <strong>Snapchat</strong>
+            <small>@Deliveryli</small>
+          </div>
+        </a>
+
+        <a class="social-card" href="https://www.tiktok.com/@deliveryli1?_r=1&_t=ZS-97QKehXIHi9" target="_blank" rel="noopener noreferrer">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/TikTok_logo.svg/512px-TikTok_logo.svg.png" alt="TikTok">
+          <div>
+            <strong>TikTok</strong>
+            <small>@deliveryli1</small>
+          </div>
+        </a>
+
+        <a class="social-card" href="https://www.facebook.com/profile.php?id=61589616561985" target="_blank" rel="noopener noreferrer">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg" alt="Facebook">
+          <div>
+            <strong>Facebook</strong>
+            <small>Page officielle</small>
+          </div>
+        </a>
+      </div>
+    </aside>
+  </section>
+
+  <div class="footer">© 2026 Deliveryli</div>
+</div>
+</body>
+</html>
